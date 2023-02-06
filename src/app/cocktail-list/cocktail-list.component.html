@@ -1,0 +1,13 @@
+<div class="button">
+<button (click)="getCocktailsFromService()">Get cocktails !!!</button>
+</div>
+
+<div class="list">
+  <ul *ngFor="let cocktail of cocktails">
+
+    <li> {{cocktail.name}} {{cocktail.prix}} €</li>
+    <img src={{cocktail.image}} alt="">
+
+
+  </ul>
+</div>
